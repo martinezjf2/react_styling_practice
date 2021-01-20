@@ -14,11 +14,11 @@ const date = new Date().getHours();
 let greeting;
 
 if (date < 12) {
-  greeting = "Good Morning";
+  greeting = "Good Morning!";
 } else if (date < 18) {
-  greeting = "Good Afternoon";
+  greeting = "Good Afternoon!";
 } else {
-  greeting = "Good Night";
+  greeting = "Good Night!";
 }
 
-ReactDOM.render(<h1>Good Afternoon!</h1>, document.getElementById("root"));
+ReactDOM.render(<h1>{greeting}</h1>, document.getElementById("root"));
