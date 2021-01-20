@@ -6,6 +6,17 @@
 //Dynamically change the color of the h1 using inline css styles.
 //Morning = red, Afternoon = green, Night = blue.
 
-
 import React from "react";
 import ReactDOM from "react-dom";
+
+const date = new Date().getHours();
+
+// let timeOfDay = () => {
+//   if (date >= 23 || date <= 12) {
+//     return "Good Morning";
+//   } else {
+//     return "dont know";
+//   }
+// };
+
+ReactDOM.render(<h1>Good {timeOfDay}</h1>, document.getElementById("root"));
