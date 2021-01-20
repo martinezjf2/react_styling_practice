@@ -11,12 +11,14 @@ import ReactDOM from "react-dom";
 
 const date = new Date().getHours();
 
-// let timeOfDay = () => {
-//   if (date >= 23 || date <= 12) {
-//     return "Good Morning";
-//   } else {
-//     return "dont know";
-//   }
-// };
+let greeting;
 
-ReactDOM.render(<h1>Good {timeOfDay}</h1>, document.getElementById("root"));
+if (date < 12) {
+  greeting = "Good Morning";
+} else if (date < 18) {
+  greeting = "Good Afternoon";
+} else {
+  greeting = "Good Night";
+}
+
+ReactDOM.render(<h1>Good Afternoon!</h1>, document.getElementById("root"));
