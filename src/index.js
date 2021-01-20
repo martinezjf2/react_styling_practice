@@ -21,4 +21,7 @@ if (date < 12) {
   greeting = "Good Night!";
 }
 
-ReactDOM.render(<h1>{greeting}</h1>, document.getElementById("root"));
+ReactDOM.render(
+  <h1 className="heading">{greeting}</h1>,
+  document.getElementById("root")
+);
